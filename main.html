@@ -134,7 +134,7 @@
 </div>
 
 <script>
-if (document.referrer.indexOf("index.html") === -1) {
+if (sessionStorage.getItem("allowed") !== "yes") {
   document.body.innerHTML = `
     <div style="height:100vh;display:flex;justify-content:center;align-items:center;font-family:sans-serif;text-align:center;">
       <div>
@@ -210,4 +210,5 @@ window.onload = function () {
 </script>
 
 </body>
+
 </html>
