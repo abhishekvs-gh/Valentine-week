@@ -38,6 +38,7 @@
     const entered = document.getElementById("pw").value;
     if (entered === correctPassword) {
       // Go to main site
+      sessionStorage.setItem("allowed", "yes")
       window.location.href = "main.html";
     } else {
       document.getElementById("error").style.display = "block";
@@ -46,4 +47,5 @@
 </script>
 
 </body>
+
 </html>
